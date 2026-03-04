@@ -1,6 +1,4 @@
-# Unet and Unet++: multiple classification using Pytorch
-
-This repository contains code for a multiple classification image segmentation model based on [UNet](https://arxiv.org/pdf/1505.04597.pdf) and [UNet++](https://arxiv.org/abs/1807.10165)
+#Luzhou-Flavor Liquor Daqu Cross-section Semantic Segmentation
 
 
 ## Usage
