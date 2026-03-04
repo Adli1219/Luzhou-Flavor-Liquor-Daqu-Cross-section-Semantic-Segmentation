@@ -1,4 +1,6 @@
-#Luzhou-Flavor Liquor Daqu Cross-section Semantic Segmentation
+# Luzhou-Flavor Liquor Daqu Cross-section Semantic Segmentation
+
+This repository contains code for a multiple classification image segmentation model based on [UNet](https://arxiv.org/pdf/1505.04597.pdf) [UNet++](https://arxiv.org/abs/1807.10165)
 
 
 ## Usage
