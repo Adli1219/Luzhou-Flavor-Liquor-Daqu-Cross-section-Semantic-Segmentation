@@ -19,6 +19,7 @@ class UNetConfig:
         momentum=0.9,
         nesterov=True,
 
+
         # -----------------------
         # 模型参数
         # -----------------------
@@ -29,6 +30,7 @@ class UNetConfig:
         fixed_size=(512,512),
         bilinear=True,
         deepsupervision=True,
+        use_augment = True,
 
         # -----------------------
         # 注意力机制（支持消融实验）
@@ -44,8 +46,10 @@ class UNetConfig:
         # -----------------------
         # 数据与保存路径
         # -----------------------
-        self.images_dir = './data/images'
-        self.masks_dir = './data/masks'
+        self.train_images_dir = "../data/train_images"
+        self.train_masks_dir = "../data/train_masks"
+        self.val_images_dir = "../data/val_images"
+        self.val_masks_dir = "../data/val_masks"
 
         # 决定 checkpoint 文件夹名称
         if layer_attentions:
@@ -81,6 +85,9 @@ class UNetConfig:
         self.weight_decay = weight_decay
         self.momentum = momentum
         self.nesterov = nesterov
+        self.fixed_size = fixed_size
+        self.use_augment = use_augment
+        self.seed = 42
 
         # -----------------------
         # 模型结构参数
